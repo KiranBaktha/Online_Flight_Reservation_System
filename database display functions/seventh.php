@@ -14,7 +14,6 @@ print 'Connected successfully!<br>';
 // Getting the input parameter (user):
 $user = $_REQUEST['value'];
 
-// Get the attributes of the user with the given username
 $query = "SELECT  TICKETNUMBER,FLIGHTNUMBER,PRICEPAID,ORIGIN,DESTINATION,BOARDINGTIME,NUMBEROFPASSENGERS,DEPARTUREDATEANDTIME,ARRIVALDATEANDTIME,TERMINALANDGATE,CLASS,INSURED FROM TICKET WHERE TICKETNUMBER = '$user'";
 $result = mysqli_query($dbcon, $query)
   or die('Query failed: ' . mysqli_error($dbcon));
