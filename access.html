@@ -1,0 +1,197 @@
+<html>
+
+<head><title>Database Access</title>
+<style>
+
+
+
+ { margin: 0; padding: 0; }
+
+    html { 
+        background: url('https://wallpapercave.com/wp/Klm0wab.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+#header{
+text-align: center;
+font-size: 350%;
+text-shadow: 2px 2px #FF0000;
+}
+
+hr{
+border-style: solid;
+border-color: red;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}
+
+input:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+input:hover, a:active {
+    background-color: red;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id = 'header'> DATABASE ACCESS</h1>
+
+<div style=" width: 300px;
+    height: 120px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> LIST ALL TABLES </h3>
+<a href="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/index.php">GO!</a>
+</div>
+
+<div style=" width: 300px;
+    height: 130px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET USER DETAILS </h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/first.php">
+  <h4 style="color:white;"> Enter Username [Tip! Try Amelia]</h4>
+  <input type="text" name="user"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 130px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET FLIGHT SCHEDULE </h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/second.php">
+  <h4 style="color:white;"> Enter Destination [Tip! Try DFW]</h4>
+  <input type="text" name="destination"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 130px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> VIEW UNBOOKED FLIGHTS</h3>
+<a href="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/third.php">GO!</a>
+</div>
+
+<div style=" width: 300px;
+    height: 130px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET PASSENGER DETAILS</h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/fourth.php">
+  <h4 style="color:white;"> Enter Passenger Name [Tip! Try Emma]</h4>
+  <input type="text" name="passenger"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 150px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET FLIGHT SCHEDULE BASED ON AIRLINES</h3>
+<h4 style="color:white;"> Choose Airline</h4>
+<select name="Airlines" form="scrolled">
+  <option value="AmericanAirlines">American Airlines</option>
+  <option value="AirCanada">Air Canada</option>
+  <option value="British Airways">British Airways</option>
+  <option value="Delta Airlines">Delta Airlines</option>
+</select>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/fifth.php" id = "scrolled">
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 210px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET TRANSACTION DETAILS WHOSE AMOUNT EXCEEDS THE ENTERED AMOUNT</h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/sixth.php">
+  <h4 style="color:white;"> Enter Minimum Transaction Amount[Tip! Try 100] </h4>
+  <input type="text" name="value"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 150px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET TICKET DETAILS</h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/seventh.php">
+  <h4 style="color:white;"> Enter 10 Digit Ticket Number[Tip! Try 3240902126] </h4>
+  <input type="text" name="value"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 150px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET AIRCRAFT DETAILS</h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/eig.php">
+  <h4 style="color:white;"> Enter Flight Model[Tip! Try A380] </h4>
+  <input type="text" name="value"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<div style=" width: 300px;
+    height: 375px;    
+    padding: 50px;
+    border: 2px solid red;">
+<h3 style="color:white;"> GET TICKET NUMBER OF PASSENGERS WHO HAVE REQUESTED AIRPORT TRANSFERS</h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/nine.php">
+  <h4 style="color:white;"> Enter transfer to Airport Condition[Kindly enter 1 for YES and 0 for NO] </h4>
+  <input type="text" name="value1"/>
+  <br>
+  <h4 style="color:white;"> Enter transfer from Airport Condition[Kindly enter 1 for YES and 0 for NO] </h4>
+  <input type="text" name="value2"/>
+  <br>
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+
+</body>
+
+</html>

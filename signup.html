@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<title>Sign Up Page!</title>
+
+<style>
+  html { 
+        background: url('http://www.powerpointhintergrund.com/uploads/red-and-black-background-picture-17.jpeg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+    .button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+
+</head>
+
+
+
+<body>
+
+<h1 style="text-align: center; color:red"> PLEASE SIGN UP HERE!</h1>
+
+ <form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/sign.php">
+  <div class="container">
+    <label style="color:red"><b>UserID</b></label>
+    <br>
+    <input type="text" placeholder="Enter UserID" name="userid" required>
+    <br>
+    <label style="color:red"><b>Enter Name</b></label>
+    <br>
+    <input type="text" placeholder="Enter Name" name="nam" required>
+    <br>
+    <label style="color:red"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+     <label style="color:red"><b>Enter Date of Birth</b></label>
+    <br>
+    <input type="date" name="dob" required>
+    <br>
+    <label style="color:red"><b>Enter Age</b></label>
+    <br>
+    <input type="number" placeholder="Enter Age" name="age" min="18" max="100"required>
+    <br>
+    <label style="color:red"><b>Enter Email</b></label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br>
+    <label style="color:red"><b>Enter Address</b></label>
+    <br>
+    <input type="text" placeholder="Enter Address" name="add" required>
+    <br>
+    <label style="color:red"><b>Enter Phone Number with no spaces</b></label>
+    <br>
+    <input type="number"  min="1111111111" max="9999999999"placeholder="Enter Phone Number" name="phone" required>
+    <br>
+    <div class="clearfix">
+      <button type="submit" class="button">Sign Up</button>
+    </div>
+  </div>
+</form> 
+
+
+
+
+
+</body>
+
+</html>

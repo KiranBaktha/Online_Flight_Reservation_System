@@ -1,0 +1,123 @@
+<html>
+
+<head>
+
+<title>Manage Page</title>
+
+<style>
+
+html { 
+        background: url('https://cdn.lynda.com/course/602861/602861-636389204550220420-16x9.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    
+ h3{
+    margin:0;
+    padding:0;
+}
+</style>
+</head>
+
+<body>
+<h1 style="text-align: center;"> ACCOUNT MANAGEMENT</h1>
+<div style=" float:left;">
+<h2> DELETE MY ACCOUNT</h2>
+
+<h3>Kindly verify your details again!Don't worry</h3>
+<h3>the tickets you booked still remain.</h3>
+<br>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/delete_user.php">
+  <div class="container">
+    <label style="color:darkgreen"><b>UserID</b></label>
+    <br>
+    <input type="text" placeholder="Enter UserID" name="userid" required>
+    <br>
+    <label style="color:darkgreen"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <div class="clearfix">
+      <button type="submit" class="button">Delete</button>
+    </div>
+  </div>
+</form> 
+
+
+<h2>DELETE A TICKET</h2>
+<br>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/delete_ticket.php">
+  <div class="container">
+    <label style="color:darkgreen"><b>Ticket Number</b></label>
+    <br>
+    <input type="number" placeholder="Enter Ticket Number" name="ticketnumber" required>
+    <br>
+    <div class="clearfix">
+      <button type="submit" class="button">Delete</button>
+    </div>
+  </div>
+</form> 
+
+
+<h2>DELETE A FLIGHT FROM FLIGHT SCHEDULE</h2>
+<br>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/delete_flight.php">
+  <div class="container">
+    <label style="color:darkgreen"><b>Flight Number</b></label>
+    <br>
+    <input type="text" placeholder="Enter Flight Number" name="fnumber" required>
+    <br>
+    <div class="clearfix">
+      <button type="submit" class="button">Delete</button>
+    </div>
+  </div>
+</form> 
+
+</div>
+
+<div style="float: right;">
+<h2>UPDATE PASSWORD</h2>
+  <form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/update_password.php">
+      <div class="container">
+   <label style="color:darkgreen"><b>UserID</b></label>
+    <br>
+    <input type="text" placeholder="Enter UserID" name="userid" required>
+    <br>
+    <label style="color:darkgreen"><b>Old Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Old Password" name="psw" required>
+    <br>
+    <label style="color:darkgreen"><b>New Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter New Password" name="psw2" required>
+    <br>
+    </div>
+    <button type="submit" class="button">Update Password</button>
+    </form>
+    
+   <h2>UPDATE FLIGHT SCHEDULE</h2>
+  <form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/update_flight2.php">
+      <div class="container">
+   <label style="color:darkgreen"><b>Enter Flight Number</b></label>
+    <br>
+    <input type="text" placeholder="Flight Number" name="fnumber" required>
+    <br>
+    <label style="color:darkgreen"><b>Enter New ORIGIN</b></label>
+    <br>
+    <input type="text" placeholder="Origin" name="origin" required>
+    <br>
+    <label style="color:darkgreen"><b>Enter New DESTINATION</b></label>
+    <br>
+    <input type="text" placeholder="Destination" name="desti" required>
+    <br>
+    </div>
+    <button type="submit" class="button">Update Flight Schedule</button>
+    </form> 
+   
+</div>
+</body>
+
+
+</html>

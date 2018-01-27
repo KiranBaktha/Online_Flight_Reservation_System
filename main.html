@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<title>Main Page</title>
+<style>
+html { 
+        background: url('http://dreamicus.com/data/aircraft/aircraft-01.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+a:link, a:visited {
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: blue;
+}
+ </style>
+
+</head>
+
+<body>
+
+<h1 style="text-align: center;"> WELCOME</h1>
+
+<div style="text-align:center">  
+    <a href="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/manage.html" >Manage My Account</a>
+</div> 
+
+
+<div style="float: left;">
+<div style=" width: 300px;
+    height: 1000px;    
+    padding: 40px;
+    border: 2px solid white;">
+<h3 style="color:black;"> RESERVE A FLIGHT </h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/book.php" id ="scroll1">
+  <h4 style="color:white;"> Enter Origin  TIP:Try ORD</h4>
+  <input type="text" name="origin" required="required"/>
+  <h4 style="color:white;"> Enter Destination TIP:Try AUS </h4>
+  <input type="text" name="destination" required="required"/>
+    <h4 style="color:white;"> Enter Passenger Name </h4>
+  <input type="text" name="pname" required="required"/>
+    <h4 style="color:white;"> Enter Passenger Email </h4>
+  <input type="text" name="pemail" required="required"/>
+   <h4 style="color:white;"> Enter Passenger Citizenship </h4>
+  <input type="text" name="pcitizenship" required="required"/>
+   <h4 style="color:white;"> Gender </h4>
+  <select name="gen" form="scroll1">
+  <option value="M">Male</option>
+  <option value="F">Female</option>
+</select>
+<h4 style="color:white;"> Date of Birth </h4>
+ <input type="date" name="dob" required>
+  <h4 style="color:white;"> Class </h4>
+  <select name="Class" form="scroll1">
+  <option value="Economy">Economy</option>
+  <option value="Business">Business</option>
+  <option value="First">First</option>
+</select>
+  <h4 style="color:white;"> Wanna Insure your flight?</h4>
+    <select name="Insure" form="scroll1">
+  <option value=1>YES</option>
+  <option value=0>NO</option>
+</select>
+  <h4 style="color:white;"> Mode of Payment</h4>
+    <select name="Paid" form="scroll1">
+  <option value='DebitCard'>Debit Card</option>
+  <option value='CashOnSite'>Cash On Site</option>
+    <option value='CreditCard'>Credit Card</option>
+      <option value='ChequeOnSite'>Cheque On Site</option>
+</select><br>  
+  <input type="submit" value="Submit" />
+</form> 
+</div>
+
+<br>
+<br>
+<br>
+</div>
+
+<div style="float: right;">
+
+<div style=" width: 300px;
+    height: 800px;    
+    padding: 40px;
+    border: 2px solid white;">
+
+<h3 style="color:black;"> ADD A FLIGHT TO THE DATABASE </h3>
+<form action="https://mpcs53001.cs.uchicago.edu/~kiranbaktha/addflight.php" id ="scroll2">
+  <h4 style="color:white;"> Enter FLIGHT NUMBER</h4>
+  <input type="text" name="fnumber" required="required"/>
+  <h4 style="color:white;"> Enter FLIGHT OPERATOR</h4>
+  <input type="text" name="foperator" required="required"/>
+    <h4 style="color:white;"> Enter PRICE </h4>
+  <input type="number" step="any" min ="1" name="price" required="required"/>
+    <h4 style="color:white;"> Enter ORIGIN</h4>
+  <input type="text" name="origin" required="required"/>
+   <h4 style="color:white;"> Enter DESTINATION </h4>
+  <input type="text" name="desti" required="required"/>
+   <h4 style="color:white;"> Enter NUMBER OF STOPS </h4>
+   <input type="number" name="stop" min="0" max="5" required="required"/>
+   </select>
+  <h4 style="color:white;"> Select Aircraft Number</h4>
+    <select name="Aircraft" form="scroll2">
+  <option value='N13151'>N13151</option>
+  <option value='N14686'>N14686</option>
+    <option value='N74352'>N74352</option>
+      <option value='N99837'>N99837</option>
+      <option value='N47713'>N47713</option>
+      <option value='N66357'>N66357</option>
+</select> 
+<br>
+  <input type="submit" value="Submit" />
+</form> 
+
+</div>
+
+</div>
+
+</body>
+
+</html>
