@@ -14,12 +14,11 @@ print 'Connected successfully!<br>';
 // Getting the input parameter (user):
 $user = $_REQUEST['passenger'];
 
-// Get the attributes of the user with the given username
+// Get the attributes of the passenger
 $query = "SELECT EMAIL,GENDER,PASSENGERNAME,CITIZENSHIP,DATEOFBIRTH from PASSENGER where PASSENGERNAME = '$user'";
 $result = mysqli_query($dbcon, $query)
   or die('Query failed: ' . mysqli_error($dbcon));
 
-//print 'Welcome1!<br>';
 
 $tuple = mysqli_fetch_assoc($result)
   or die("Passenger $user not found!");
