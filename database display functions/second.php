@@ -14,12 +14,11 @@ print 'Connected successfully!<br>';
 // Getting the input parameter (user):
 $user = $_REQUEST['destination'];
 
-// Get the attributes of the user with the given username
+// Get the attributes of the flight
 $query = "SELECT FLIGHTNUMBER,FLIGHTOPERATOR,PRICE,ORIGIN,DESTINATION,TRAVELTIME,DEPARTUREDATEANDTIME,ARRIVALDATEANDTIME,NUMBEROFSTOPS FROM FLIGHTS_SCHEDULE WHERE DESTINATION = '$user'";
 $result = mysqli_query($dbcon, $query)
   or die('Query failed: ' . mysqli_error($dbcon));
 
-//print 'Welcome1!<br>';
 
 $tuple = mysqli_fetch_assoc($result)
   or die("Destination $user not found!");
