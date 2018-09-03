@@ -2,7 +2,7 @@
 An online flight reservation system built during my Databases course at UChicago.
 <br />
 
-## File Description:
+**File Description:**
 <br />
 **final.html** - This is the main front page of the application.
 <br />
@@ -17,7 +17,7 @@ An online flight reservation system built during my Databases course at UChicago
 **access.html** - This is the page for database display features.
 <br />
 <br />
-## Database display functions:
+**Database display functions:**
 <br />
 **index.php** - Show all tables.
 <br />
@@ -40,7 +40,7 @@ An online flight reservation system built during my Databases course at UChicago
 **nine.php** -  Get the ticket number of passengers who have requested airport transfers.
 <br />
 <br />
-## Database modification functions:
+**Database modification functions:**
 <br />
 **sign.php** - Signup
 <br />
